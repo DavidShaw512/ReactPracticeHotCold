@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: fZw91Rdz7oF9zGvnO2MLrYkSlHu1kW7oYwmEM0CjJ5114SlbTDnUgL5hXVkTVoMx/lzjLZyui/OQ5qDEN+GJwc0MxbxdiTH7SXiF17wQIsXlSvMkL7H6WPk6vW+WxSoERxfmEy64hDl3LWlSmwCht9xZW1NxIhujPaFg8UEFQ71mFkzdL3h9Z6LFKX0UGG4dW94USR/cxs1Kim7ttABF99jBPCpt8s/4lKW9qrR6S2NjmA0e6+7kwrcHSZ1OiRQc49ZFtBfH1Yx2fyD++HVt+O0W2XJ6jvBSBH/NgUDr6iGL4IU3/lv1EDKgJEo8ACPixP5VT54LkSt5XHpNFOMyO/52+h7XdwvsnTPUIELdjuffgsPQzKjWpEVJixm4+MAq2geEBlKSY6Pxj/Fx8uyPPVLObVY+B+r5Wnq7tBLkV2RoWnFXpT/LhRitezid8BIrIHiO73gSI2eOIo9G413oTwt1bCqlDGWQubVEKmu4qKEJUNKMLquIGGwCi6xLOf1cTxKtpMC/jTYQT0d7SYP4S8jJvSc7oDVdgXbs9f8MamukSkH2gt1dU7r0AhqNzh8XUEebvWnaurKuxtcjNE3Dv8b6XF91yfOjYirNsigCM9Ol0axjbBzu+8mbYDI8TAvKXe43g/acVDaQN5eWrlyFk8nhAeZOhWuU50AajNGl/vI=
+  app: powerful-springs-98935
+  on:
+    repo: DavidShaw512/ReactPracticeHotCold
